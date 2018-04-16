@@ -1,0 +1,42 @@
+#:kivy 1.10.0
+
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: 0.8
+            orientation: 'vertical'
+            Label:    
+                halign: 'left'
+                valign: 'top'
+                text: root.info
+                bold: False
+                font_size: "22dp"
+                color: (0, 1, 0, 1)
+                
+        BoxLayout:
+            size_hint_y: 0.1
+            Button:
+                background_color: (0.8, 0.8, 0.8, 1)
+                text: 'Reset'
+                color: (0, 1, 0, 1)
+                font_size: "22dp"
+                on_press: app.do_reset()
+                
+        BoxLayout:
+            size_hint_y: 0.1
+            orientation: 'horizontal'
+
+            Button:
+                background_color: (0.8, 0.8, 0.8, 1)
+                text: 'Options'
+                color: (0, 1, 0, 1)
+                font_size: "22dp"
+                on_release: app.open_settings()
+                
+            Button:
+                background_color: (0.8, 0.8, 0.8, 1)
+                text: 'Quitter'
+                color: (0, 1, 0, 1)
+                font_size: "22dp"
+                on_release: app.do_quit()
