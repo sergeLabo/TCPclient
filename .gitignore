@@ -1,33 +1,38 @@
-# http://www.gnu.org/software/automake
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
+# GitEye
+*.project
 
-# http://www.gnu.org/software/autoconf
+# buildozer
+.buildozer/
+bin/
 
-/autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.guess
-/config.h.in
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+# Geany
+*.geany
 
-# https://www.gnu.org/software/libtool/
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-/ltmain.sh
-
-# http://www.gnu.org/software/texinfo
-
-/texinfo.tex
+# some
+old/
+out/
+test/

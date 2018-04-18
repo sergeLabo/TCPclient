@@ -54,7 +54,7 @@ class LabTcpClient:
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.connect_sock()
             print("Création du socket client {}".format(self.server_address))
-            sleep(0.1)
+            sleep(0.01)
 
     def connect_sock(self):
         """Connexion de la socket, si ok retoune 1 sinon None"""

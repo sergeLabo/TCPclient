@@ -6,9 +6,7 @@ projet TCPclient
 Send data to ip, port for test
 """
 
-import os, sys
-from time import sleep
-import threading
+from os import _exit
 
 import kivy
 kivy.require('1.10.0')
@@ -186,7 +184,7 @@ class TCPclientApp(App):
         TCPclientApp.get_running_app().stop()
 
         # Extinction de tout
-        os._exit(0)
+        _exit(0)
 
 
 if __name__ == "__main__":
